@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-        <div class="card mb-3" style="max-width: 540px; background-color:#FFFAFA">
+        <div class="card mb-3" style="max-width: 540px; height: 90%; background-color:#FFFAFA">
             <div class="row no-gutters" data-toggle="modal" data-target="#exampleModal" @click="sendBook(book)" style="margin:10px">
                 <div class="col-md-4">
                     <img v-if="book.volumeInfo.imageLinks" :src="book.volumeInfo.imageLinks.thumbnail" class="card-img" :alt="book.volumeInfo.title">

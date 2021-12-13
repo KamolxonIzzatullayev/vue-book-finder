@@ -20,7 +20,14 @@
 </div>
 
 <div class="row">
-  <app-book-card @data="childData = $event" class="col-lg-3" v-for="book in bookList" :key="book.id" :book="book" @click.native="checkBookData"/>
+  <app-book-card 
+    @data="childData = $event" 
+    class="col-lg-3" 
+    v-for="book in bookList" 
+    :key="book.id" 
+    :book="book" 
+    @click.native="checkBookData"
+  />
   
   </div>
 
